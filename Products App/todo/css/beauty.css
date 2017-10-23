@@ -1,0 +1,23 @@
+.container { max-width: 1880px !important}
+h1{
+    font-size:110px;
+    font-family:'Buenard', serif;
+    font-weight:bold;
+    background-color: rgba(39, 173, 13, 0.85);
+    text-transform:inherit;  
+    margin: 0px auto 0px;
+    text-shadow: 2px 2px 2px #000;
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+    text-align:center;
+    color:#fff;
+    }
+div>p { font-size: 22px}
+div>ul>li>span {font-size: 20px}
+button { margin: 1px !important}
+div>div>div {position:relative; margin:auto}
+.carousel-control .icon-prev, .carousel-control .icon-next {
+    font-size: 100px; 
+    margin-top: -50px;
+    color: red !important;
+}

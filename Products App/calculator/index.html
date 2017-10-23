@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title> Calculator </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="./js/appLogic.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+    <h1>Calculator App</h1>
+    <div ng-controller="Calculate as c">
+        <input type="number" ng-model="c.firstNumber"/> 
+        <span>{{c.Symbol}}</span>
+        <input type="number" ng-model="c.secondNumber"/> 
+        
+        <button ng-click="c.Equals()">=</button>
+        <span>{{c.Result}}</span>
+        <br/>
+        <span> Choose an operation </span>
+        <button ng-click="c.Plus()">+</button>
+        <button ng-click="c.Divide()">/</button>
+        <button ng-click="c.Minus()">-</button>
+        <button ng-click="c.Times()">*</button>
+        
+    </div>
+    <a href="../main/html/index.html">Go Back To Presentation Page</a>
+</body>
+
+</html>

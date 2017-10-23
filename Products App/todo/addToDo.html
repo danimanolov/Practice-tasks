@@ -1,0 +1,16 @@
+<div class="panel-body">
+    <p class="label">Add a task:</p>
+    <input type="text" ng-model="td.toDo"></input>
+    <button class="btn-primary btn-sm" ng-click="td.addToDo()">Add</button>
+    <p>Your Todos:</p>
+    <ul style="list-style: none;" ng-repeat="i in td.toDoList track by $index">
+        <li>
+           <span> {{ $index + 1}}.</span> <span ng-show="!td.editable">{{ i }} </span>
+             <input type="text" ng-model="td.toDoList[$index]" ng-show="td.editable"></input>
+            <button class="btn-danger btn-md" ng-click="td.removeToDo($index)" ng-show="td.editable">Remove</button>
+       
+        </li>
+    </ul>
+    <button class="btn-success" ng-click="td.saveChanges($index)" ng-show="td.editable">Save</button>
+    <button class="btn-danger" ng-click="td.enableEdit()">Edit</button>
+</div>
